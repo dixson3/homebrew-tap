@@ -5,21 +5,21 @@
 class Naba < Formula
   desc "AI image generation CLI powered by Google Gemini"
   homepage "https://github.com/dixson3/naba"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dixson3/naba/releases/download/v0.1.0/naba_darwin_amd64.tar.gz"
-      sha256 "d75bb1d912fbc5a8fc5d1e7153bf9713b8da046bfbc5a78e4d1ba4718078757b"
+      url "https://github.com/dixson3/naba/releases/download/v0.1.1/naba_darwin_amd64.tar.gz"
+      sha256 "ceee67b4b26d35cae08ed74eda5d224b61a68ada3935d2a2c9b7a98190f482af"
 
       def install
         bin.install "naba"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dixson3/naba/releases/download/v0.1.0/naba_darwin_arm64.tar.gz"
-      sha256 "49140156d74cd9b0c5d09c2c08d9a18c635bfcad66fd155eab0293c5178581c3"
+      url "https://github.com/dixson3/naba/releases/download/v0.1.1/naba_darwin_arm64.tar.gz"
+      sha256 "7d825dec68ff9fb34deca8edcfc88a801f77e60cff46176e945295da3dbd9d91"
 
       def install
         bin.install "naba"
@@ -29,15 +29,15 @@ class Naba < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dixson3/naba/releases/download/v0.1.0/naba_linux_amd64.tar.gz"
-      sha256 "5c8116a10512bc6aed95d251235dc70fe2bb4ba52d6d2e9adafb68af2c87f14d"
+      url "https://github.com/dixson3/naba/releases/download/v0.1.1/naba_linux_amd64.tar.gz"
+      sha256 "f143d6d00a0a18e6502cd9d7bb241eaef589b2cc1711db377c5742816ca9c21c"
       def install
         bin.install "naba"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dixson3/naba/releases/download/v0.1.0/naba_linux_arm64.tar.gz"
-      sha256 "1342911ef08ff33e5a9ae1eb7bd7e12f775ba535c1b4f8f2ed776618e493561b"
+      url "https://github.com/dixson3/naba/releases/download/v0.1.1/naba_linux_arm64.tar.gz"
+      sha256 "bbf1572f6f82dd653b7f1dc5128562a6301a1494072906222bb90b830c31b67f"
       def install
         bin.install "naba"
       end
