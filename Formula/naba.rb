@@ -5,23 +5,23 @@
 class Naba < Formula
   desc "AI image generation CLI powered by Google Gemini"
   homepage "https://github.com/dixson3/naba"
-  version "0.1.1"
+  version "0.2.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dixson3/naba/releases/download/v0.1.1/naba_darwin_amd64.tar.gz"
-      sha256 "ceee67b4b26d35cae08ed74eda5d224b61a68ada3935d2a2c9b7a98190f482af"
+      url "https://github.com/dixson3/naba/releases/download/v0.2.0/naba_darwin_amd64.tar.gz"
+      sha256 "99f8440c6424723164c86a71c592d48e4d1df05a74bf325c091dd9565eeb90e3"
 
-      def install
+      define_method(:install) do
         bin.install "naba"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dixson3/naba/releases/download/v0.1.1/naba_darwin_arm64.tar.gz"
-      sha256 "7d825dec68ff9fb34deca8edcfc88a801f77e60cff46176e945295da3dbd9d91"
+      url "https://github.com/dixson3/naba/releases/download/v0.2.0/naba_darwin_arm64.tar.gz"
+      sha256 "c183345ff3f85a60798fb64f727653cebe55e2bc62fa742457318e33d7cc205d"
 
-      def install
+      define_method(:install) do
         bin.install "naba"
       end
     end
@@ -29,16 +29,16 @@ class Naba < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dixson3/naba/releases/download/v0.1.1/naba_linux_amd64.tar.gz"
-      sha256 "f143d6d00a0a18e6502cd9d7bb241eaef589b2cc1711db377c5742816ca9c21c"
-      def install
+      url "https://github.com/dixson3/naba/releases/download/v0.2.0/naba_linux_amd64.tar.gz"
+      sha256 "ebebd4914c05666e271bef51b30c86b21b9a44d0baeccab0bb431335b75fa666"
+      define_method(:install) do
         bin.install "naba"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dixson3/naba/releases/download/v0.1.1/naba_linux_arm64.tar.gz"
-      sha256 "bbf1572f6f82dd653b7f1dc5128562a6301a1494072906222bb90b830c31b67f"
-      def install
+      url "https://github.com/dixson3/naba/releases/download/v0.2.0/naba_linux_arm64.tar.gz"
+      sha256 "dbc58424283502835338e91bf3b7ec841bd3c2b31a6a3cc78c95924a6d5fb33a"
+      define_method(:install) do
         bin.install "naba"
       end
     end
