@@ -5,21 +5,21 @@
 class Naba < Formula
   desc "AI image generation CLI powered by Google Gemini"
   homepage "https://github.com/dixson3/naba"
-  version "0.4.0"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/dixson3/naba/releases/download/v0.4.0/naba_darwin_amd64.tar.gz"
-      sha256 "c17afce261252fb840730d1e46f427b31d348edd6906f995ae03807ad58422db"
+      url "https://github.com/dixson3/naba/releases/download/v0.5.0/naba_darwin_amd64.tar.gz"
+      sha256 "938072711aa45725aa1aa526286da2089803788483f03a6cc163ae877cf548c4"
 
       define_method(:install) do
         bin.install "naba"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/dixson3/naba/releases/download/v0.4.0/naba_darwin_arm64.tar.gz"
-      sha256 "a9a0850edd161c6bda8d0a1eeeb33c8927269e131fef836b4b8a763874c039b3"
+      url "https://github.com/dixson3/naba/releases/download/v0.5.0/naba_darwin_arm64.tar.gz"
+      sha256 "2ce5deab15291384cf60b1aa204b5d9b868cfbef2950144747f2396023a996b2"
 
       define_method(:install) do
         bin.install "naba"
@@ -29,15 +29,15 @@ class Naba < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dixson3/naba/releases/download/v0.4.0/naba_linux_amd64.tar.gz"
-      sha256 "054d1306bba436f8c80fff4a844448d53d1cd43c5d7c8f4dcc37a6f740986431"
+      url "https://github.com/dixson3/naba/releases/download/v0.5.0/naba_linux_amd64.tar.gz"
+      sha256 "894621443de05f92efde4547c3dc2f47ffc91abf0e7f2bf2a2be574efeb7bb6b"
       define_method(:install) do
         bin.install "naba"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/dixson3/naba/releases/download/v0.4.0/naba_linux_arm64.tar.gz"
-      sha256 "48f86e43c2b917bcd58f0690b44cad0a6131ede1b8934cc63541652084b4dda5"
+      url "https://github.com/dixson3/naba/releases/download/v0.5.0/naba_linux_arm64.tar.gz"
+      sha256 "7d6a212ce0cbfcce2c868aa3f5de16d0e36c63ad246be9c2523e154cc00076e0"
       define_method(:install) do
         bin.install "naba"
       end
