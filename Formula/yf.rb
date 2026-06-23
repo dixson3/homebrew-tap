@@ -23,8 +23,6 @@ class Yf < Formula
     end
   end
   license "MIT"
-  depends_on "beads"
-  depends_on "uv"
 
   BINARY_ALIASES = {
     "aarch64-apple-darwin":      {},
