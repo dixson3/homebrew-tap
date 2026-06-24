@@ -1,28 +1,30 @@
 class Yf < Formula
   desc "Yoshiko Flow CLI: install, upgrade, verify, and preflight portable agent skills."
   homepage "https://github.com/dixson3/yoshiko-flow"
-  version "0.1.0"
+  version "0.2.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/dixson3/yoshiko-flow/releases/download/v0.1.0/yf-aarch64-apple-darwin.tar.xz"
-      sha256 "f4aee9a658a108ee8ddf514a58486ae2bf75733ca620f28bea485085af833003"
+      url "https://github.com/dixson3/yoshiko-flow/releases/download/v0.2.0/yf-aarch64-apple-darwin.tar.xz"
+      sha256 "df6be16c1280e3f30850e0ea551677f223803682747ae1dd61baa92da492cbe7"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/dixson3/yoshiko-flow/releases/download/v0.1.0/yf-x86_64-apple-darwin.tar.xz"
-      sha256 "63bd3ef63a5c7cf04cb2090f8936532f4cedc9eac1d6462e9a8942c1146a02e9"
+      url "https://github.com/dixson3/yoshiko-flow/releases/download/v0.2.0/yf-x86_64-apple-darwin.tar.xz"
+      sha256 "dfded1380cceb38b8e80db1ef1f73f476f8ab1bd2783451ee2b848ca8e35f1f5"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/dixson3/yoshiko-flow/releases/download/v0.1.0/yf-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "85bbd0be1bc2948e96b737acc55c6618c17fbc1871b45386b7e3c1706418e2aa"
+      url "https://github.com/dixson3/yoshiko-flow/releases/download/v0.2.0/yf-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "930b3b8d66ded84ffcb67b3958cefb564860c7b41c5069eb021bce293a6c1f06"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/dixson3/yoshiko-flow/releases/download/v0.1.0/yf-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "d1ab72f01808a469cb57d7ee82cd74c845b441e6a8beb480cf5a389d39fd4991"
+      url "https://github.com/dixson3/yoshiko-flow/releases/download/v0.2.0/yf-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "f363f6b893e614745e0b82a1f2676532c353c236c03ba8a821fefd4b71aa5226"
     end
   end
   license "MIT"
+  depends_on "beads"
+  depends_on "uv"
 
   BINARY_ALIASES = {
     "aarch64-apple-darwin":      {},
