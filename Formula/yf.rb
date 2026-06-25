@@ -1,25 +1,25 @@
 class Yf < Formula
   desc "Yoshiko Flow CLI: install, upgrade, verify, and preflight portable agent skills."
   homepage "https://github.com/dixson3/yoshiko-flow"
-  version "0.2.0"
+  version "0.3.0"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/dixson3/yoshiko-flow/releases/download/v0.2.0/yf-aarch64-apple-darwin.tar.xz"
-      sha256 "df6be16c1280e3f30850e0ea551677f223803682747ae1dd61baa92da492cbe7"
+      url "https://github.com/dixson3/yoshiko-flow/releases/download/v0.3.0/yf-aarch64-apple-darwin.tar.xz"
+      sha256 "d19d55b6deca28df9b329a31e5298a78c277b3122d01f9e615c69c7c44f01aa5"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/dixson3/yoshiko-flow/releases/download/v0.2.0/yf-x86_64-apple-darwin.tar.xz"
-      sha256 "dfded1380cceb38b8e80db1ef1f73f476f8ab1bd2783451ee2b848ca8e35f1f5"
+      url "https://github.com/dixson3/yoshiko-flow/releases/download/v0.3.0/yf-x86_64-apple-darwin.tar.xz"
+      sha256 "148ec2fa9173806713c53f35bfbe9a7c18a8a4908529d30058aa7ce7cc01e7bf"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/dixson3/yoshiko-flow/releases/download/v0.2.0/yf-aarch64-unknown-linux-gnu.tar.xz"
-      sha256 "930b3b8d66ded84ffcb67b3958cefb564860c7b41c5069eb021bce293a6c1f06"
+      url "https://github.com/dixson3/yoshiko-flow/releases/download/v0.3.0/yf-aarch64-unknown-linux-gnu.tar.xz"
+      sha256 "b2ba7d0a5f6a993582074a7d9e01ca370356cf132656a764dd30e445a7f8164f"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/dixson3/yoshiko-flow/releases/download/v0.2.0/yf-x86_64-unknown-linux-gnu.tar.xz"
-      sha256 "f363f6b893e614745e0b82a1f2676532c353c236c03ba8a821fefd4b71aa5226"
+      url "https://github.com/dixson3/yoshiko-flow/releases/download/v0.3.0/yf-x86_64-unknown-linux-gnu.tar.xz"
+      sha256 "87b7770ec40da757f986ec4de38da956c13dabfffebc5fcd5ee21fb6e1d48743"
     end
   end
   license "MIT"
