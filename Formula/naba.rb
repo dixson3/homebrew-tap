@@ -1,25 +1,25 @@
 class Naba < Formula
   desc "Nanobanana image generation CLI (multi-provider: Gemini, OpenRouter)"
   homepage "https://github.com/dixson3/naba"
-  version "0.8.1"
+  version "0.8.2"
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/dixson3/naba/releases/download/v0.8.1/naba-aarch64-apple-darwin.tar.gz"
-      sha256 "5a6d269526009ad00ae06915d420929cb25e4304b681c576aff8e5cc3f280ea1"
+      url "https://github.com/dixson3/naba/releases/download/v0.8.2/naba-aarch64-apple-darwin.tar.gz"
+      sha256 "868138f0c5c00c321de99bee49384197e86ba9a81413dc6ce1442b7acd723fa9"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/dixson3/naba/releases/download/v0.8.1/naba-x86_64-apple-darwin.tar.gz"
-      sha256 "9094fc9d3732cbfd5231f889ddd2b1049795e182efd10ee8a10c385ef9007dc1"
+      url "https://github.com/dixson3/naba/releases/download/v0.8.2/naba-x86_64-apple-darwin.tar.gz"
+      sha256 "88dd3e3975f8e6022abdce9e3281e9b7cace646585beccf4510115e8ac6d6732"
     end
   end
   if OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/dixson3/naba/releases/download/v0.8.1/naba-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "d7a2ae1cb48fefe4f23f7c7e1fb7ad0e177d1b1803c68c1324f28452bdb80840"
+      url "https://github.com/dixson3/naba/releases/download/v0.8.2/naba-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "9c101a917ad03ed180fd26e424c8286271e0afe6aa7dc3a918ddc15ad6136e67"
     end
     if Hardware::CPU.intel?
-      url "https://github.com/dixson3/naba/releases/download/v0.8.1/naba-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "17074390090441a49214c6e49217a41e120ca6d6511000cb082331e08fc2f87c"
+      url "https://github.com/dixson3/naba/releases/download/v0.8.2/naba-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "66e280db8c50f1dcd6e031f712e853b1845f750a51a1ccaa13c1cabbcc5b6787"
     end
   end
   license "MIT"
